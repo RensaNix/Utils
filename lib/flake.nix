@@ -1,0 +1,5 @@
+{
+  outputs = i: {
+    lib = import ./.;
+  };
+}
