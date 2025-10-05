@@ -1,5 +1,5 @@
 {
-  outputs = i: {
+  outputs = _i: {
     lib = import ./.;
   };
 }

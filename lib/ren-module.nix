@@ -25,6 +25,7 @@ in {
       description = ''
         The system architecture (e.g., 'x86_64-linux', 'aarch64-darwin').
       '';
+      default = config.ren.pkgs.system or "";
     };
 
     home-manager = mkInputOption "Home Manager";
@@ -41,10 +42,6 @@ in {
       description = ''
         An instantiated nixpkgs set. Used for general pkgs and to get NixOS systems' modules.
       '';
-      apply = x:
-        if (hasAttr "${config.ren.system or "unset"}" x)
-        then x.${config.ren.system}
-        else x;
     };
   };
 }
