@@ -71,6 +71,7 @@ in
     else systemConfig
   )
   // {
+    inherit userConfig;
     innerConfig = {
       imports = [userConfig ./ren-module.nix];
     };

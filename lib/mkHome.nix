@@ -27,6 +27,7 @@
     modules = [./ren-module.nix userConfig] ++ hmModules;
   };
 in {
+  inherit userConfig;
   innerConfig = {
     imports = [userConfig ./ren-module.nix];
   };

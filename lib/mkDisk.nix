@@ -26,6 +26,7 @@
     ];
   };
 in {
+  inherit userConfig;
   innerConfig = builtins.removeAttrs diskConfig.config ["ren"];
   inherit (diskConfig) config options;
   scripts = diskConfig.config._scripts {inherit (evaled.config.ren) pkgs;};
