@@ -1,6 +1,6 @@
 {
   "nodes": {
-    "devshell-lib": {
+    "devshell": {
       "locked": {
         "dir": "lib",
         "lastModified": 1758204313,
@@ -17,10 +17,65 @@
         "type": "gitlab"
       }
     },
+    "nix-gitlab-ci-lib": {
+      "locked": {
+        "dir": "lib",
+        "lastModified": 1758804624,
+        "narHash": "sha256-2AdxBYJKflgO7oZr1CfzyAxivDkGjvFmQpOuN6Yq128=",
+        "owner": "TECHNOFAB",
+        "repo": "nix-gitlab-ci",
+        "rev": "d88ada2c41ae05b08d7ec644a4d222e93fff78ae",
+        "type": "gitlab"
+      },
+      "original": {
+        "dir": "lib",
+        "owner": "TECHNOFAB",
+        "ref": "3.0.0-alpha.3",
+        "repo": "nix-gitlab-ci",
+        "type": "gitlab"
+      }
+    },
+    "nixmkdocs": {
+      "locked": {
+        "dir": "lib",
+        "lastModified": 1757055638,
+        "narHash": "sha256-KHYSkEreFe4meXzSdEbknC/HwaQSNClQkc8vzHlAsMM=",
+        "owner": "TECHNOFAB",
+        "repo": "nixmkdocs",
+        "rev": "7840a5febdbeaf2da90babf6c94b3d0929d2bf74",
+        "type": "gitlab"
+      },
+      "original": {
+        "dir": "lib",
+        "owner": "TECHNOFAB",
+        "repo": "nixmkdocs",
+        "type": "gitlab"
+      }
+    },
     "root": {
       "inputs": {
-        "devshell-lib": "devshell-lib",
+        "devshell": "devshell",
+        "nix-gitlab-ci-lib": "nix-gitlab-ci-lib",
+        "nixmkdocs": "nixmkdocs",
+        "soonix-lib": "soonix-lib",
         "treefmt-nix": "treefmt-nix"
+      }
+    },
+    "soonix-lib": {
+      "locked": {
+        "dir": "lib",
+        "lastModified": 1758615778,
+        "narHash": "sha256-tggru+siXlLcLUjHtMojkJJWTS/8I3gm8nhnlz+qrTo=",
+        "owner": "TECHNOFAB",
+        "repo": "soonix",
+        "rev": "e04b71c07413251dcb52036b4a51c6c7c0dca2ad",
+        "type": "gitlab"
+      },
+      "original": {
+        "dir": "lib",
+        "owner": "TECHNOFAB",
+        "repo": "soonix",
+        "type": "gitlab"
       }
     },
     "treefmt-nix": {

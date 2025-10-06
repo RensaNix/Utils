@@ -4,7 +4,11 @@
     ren.url = "gitlab:rensa-nix/core?dir=lib";
   };
 
-  outputs = {ren, ...} @ inputs:
+  outputs = {
+    ren,
+    self,
+    ...
+  } @ inputs:
     ren.buildWith
     {
       inherit inputs;
@@ -16,7 +20,14 @@
         };
       cellBlocks = with ren.blocks; [
         (simple "devShells")
+        (simple "docs")
+        (simple "ci")
       ];
     }
-    {};
+    {
+      packages = ren.select self [
+        ["repo" "docs"]
+        ["repo" "ci" "packages"]
+      ];
+    };
 }

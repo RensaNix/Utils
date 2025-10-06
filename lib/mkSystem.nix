@@ -26,7 +26,7 @@
     };
     imports =
       # add home-manager if the input is passed
-      optionals (evaled.options.ren.home-manager.isDefined) [
+      optionals evaled.options.ren.home-manager.isDefined [
         evaled.config.ren.home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = mkDefault true;
@@ -34,20 +34,20 @@
         }
       ]
       # add nixos-wsl if the input is passed
-      ++ optionals (evaled.options.ren.nixos-wsl.isDefined) [
+      ++ optionals evaled.options.ren.nixos-wsl.isDefined [
         evaled.config.ren.nixos-wsl.nixosModules.wsl
         {
           wsl.enable = mkDefault true;
         }
       ]
       # add disko if the input is passed
-      ++ optionals (evaled.options.ren.disko.isDefined) [
+      ++ optionals evaled.options.ren.disko.isDefined [
         evaled.config.ren.disko.nixosModules.disko
       ];
   };
   extraDarwinConfig = {
     # add home-manager if the input is passed
-    imports = optionals (evaled.options.ren.home-manager.isDefined) [
+    imports = optionals evaled.options.ren.home-manager.isDefined [
       evaled.config.ren.home-manager.darwinModules.home-manager
       {
         home-manager.useGlobalPkgs = mkDefault true;

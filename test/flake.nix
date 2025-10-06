@@ -7,7 +7,7 @@
     nix-darwin.url = "github:lnl7/nix-darwin";
   };
 
-  outputs = {...} @ inputs: let
+  outputs = inputs: let
     lib = import ../lib {inherit (inputs.nixpkgs) lib;};
     pkgs = inputs.nixpkgs.legacyPackages.aarch64-linux;
   in rec {
