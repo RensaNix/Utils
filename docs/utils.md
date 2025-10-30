@@ -4,6 +4,10 @@
 
 Wraps a NixOS or `nix-darwin` configuration. Optionally integrates `nix-wsl` (NixOS only), `disko` (NixOS only) and/or `home-manager`.
 
+If you want to integrate `disko`, just set `disko.devices` to `utils.collectDisks cell.disks` like below.
+
+If you want to integrate `home-manager`, set the user's config in `home-manager.users.<username>` to the `innerConfig` output of [`mkHome`](#mkHome), like below.
+
 **Example**:
 
 ```nix title="cells/host/nixos.nix"
@@ -12,10 +16,17 @@ Wraps a NixOS or `nix-darwin` configuration. Optionally integrates `nix-wsl` (Ni
 in {
   test = utils.mkSystem {
     ren = {
-      inherit (inputs) pkgs disko;
+      inherit (inputs) pkgs disko home-manager;
     };
 
     disko.devices = utils.collectDisks cell.disks;
+
+    home-manager = {
+      useUserPackages = false;
+      useGlobalPkgs = true;
+      users."demo" = cell.home."demo@test".innerConfig;
+    };
+    # also configure users etc.
 
     system.stateVersion = "25.11";
   };
