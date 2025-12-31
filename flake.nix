@@ -1,7 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    ren.url = "gitlab:rensa-nix/core?dir=lib";
+    ren.url = "gitlab:rensa-nix/core/v0.1.1?dir=lib";
   };
 
   outputs = {
@@ -22,12 +22,14 @@
         (simple "devShells")
         (simple "docs")
         (simple "ci")
+        (simple "soonix")
       ];
     }
     {
       packages = ren.select self [
         ["repo" "docs"]
         ["repo" "ci" "packages"]
+        ["repo" "soonix" "packages"]
       ];
     };
 }
