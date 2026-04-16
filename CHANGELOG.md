@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.1.2](https://gitlab.com/rensa-nix/utils/compare/44032c3895c6ab6fbfdd176e7684b9dbbdf530da..v0.1.2) - 2026-04-16
+#### Bug Fixes
+- missed another fold → foldr - ([44032c3](https://gitlab.com/rensa-nix/utils/commit/44032c3895c6ab6fbfdd176e7684b9dbbdf530da)) - [@TECHNOFAB](https://gitlab.com/TECHNOFAB)
+
+- - -
+
 ## [v0.1.1](https://gitlab.com/rensa-nix/utils/compare/0b19ff083120590ef4aabe034f5c1a969652edda..v0.1.1) - 2026-04-16
 #### Bug Fixes
 - use foldr instead of deprecated fold - ([a48eecb](https://gitlab.com/rensa-nix/utils/commit/a48eecbdc51f8c7474b5aacd3b7c4bc4ee5c9ff0)) - [@TECHNOFAB](https://gitlab.com/TECHNOFAB)
