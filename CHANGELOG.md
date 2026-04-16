@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.1.1](https://gitlab.com/rensa-nix/utils/compare/0b19ff083120590ef4aabe034f5c1a969652edda..v0.1.1) - 2026-04-16
+#### Bug Fixes
+- use foldr instead of deprecated fold - ([a48eecb](https://gitlab.com/rensa-nix/utils/commit/a48eecbdc51f8c7474b5aacd3b7c4bc4ee5c9ff0)) - [@TECHNOFAB](https://gitlab.com/TECHNOFAB)
+#### Miscellaneous Chores
+- (**deps**) lock file maintenance (nix/repo/flake.nix) - ([0b19ff0](https://gitlab.com/rensa-nix/utils/commit/0b19ff083120590ef4aabe034f5c1a969652edda)) - Renovate Bot
+- pin flake input versions, use rensa autodiscovery, etc. - ([5f0c714](https://gitlab.com/rensa-nix/utils/commit/5f0c714d804adec7b117339d307d25aba3b687bb)) - [@TECHNOFAB](https://gitlab.com/TECHNOFAB)
+
+- - -
+
 ## [v0.1.0](https://gitlab.com/rensa-nix/utils/compare/e832157e6859bfd2f46dec03b35cd357d5911bad..v0.1.0) - 2025-12-31
 #### Features
 - add utility functions for disko and module discovery/loading - ([3363059](https://gitlab.com/rensa-nix/utils/commit/3363059b651fef3d315863a36f6bd8f1dffc3f76)) - [@TECHNOFAB](https://gitlab.com/TECHNOFAB)
