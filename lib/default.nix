@@ -9,7 +9,7 @@
     removePrefix
     splitString
     setAttrByPath
-    fold
+    foldr
     recursiveUpdate
     ;
 in rec {
@@ -23,7 +23,7 @@ in rec {
   #
   #   disko.devices = utils.collectDisks cell.disks;
   collectDisks = disks:
-    fold (acc: item: recursiveUpdate acc item) {}
+    foldr (acc: item: recursiveUpdate acc item) {}
     (map (dev: builtins.removeAttrs dev.userConfig ["ren"])
       (builtins.attrValues disks));
 
