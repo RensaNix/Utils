@@ -84,7 +84,7 @@ in rec {
       else importedData;
 
     importedContents = map importAndProcessFile allNixFiles;
-    mergedFiles = fold (acc: item: recursiveUpdate acc item) {} importedContents;
+    mergedFiles = foldr (acc: item: recursiveUpdate acc item) {} importedContents;
   in
     mergedFiles;
 }
