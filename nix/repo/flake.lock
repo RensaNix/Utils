@@ -13,6 +13,7 @@
       "original": {
         "dir": "lib",
         "owner": "rensa-nix",
+        "ref": "v0.1.0",
         "repo": "devshell",
         "type": "gitlab"
       }
@@ -30,6 +31,7 @@
       "original": {
         "dir": "lib",
         "owner": "rensa-nix",
+        "ref": "v0.1.0",
         "repo": "devtools",
         "type": "gitlab"
       }
@@ -55,16 +57,17 @@
     "nixmkdocs": {
       "locked": {
         "dir": "lib",
-        "lastModified": 1766404754,
-        "narHash": "sha256-EjBe6x6BT8ckPirMWhSf1GfaFxORYxR/Uu71FvSAm60=",
+        "lastModified": 1767549915,
+        "narHash": "sha256-by3r2qddlyzylup5fzSaDwtoy3eFHNKb65IuIq6bsAs=",
         "owner": "TECHNOFAB",
         "repo": "nixmkdocs",
-        "rev": "cfa9606eeeb9288e2799896d7d42b3d3860f9ccb",
+        "rev": "f3b2f4b19178e97c5580367be0f97e61a085db6d",
         "type": "gitlab"
       },
       "original": {
         "dir": "lib",
         "owner": "TECHNOFAB",
+        "ref": "v1.1.0",
         "repo": "nixmkdocs",
         "type": "gitlab"
       }
@@ -82,16 +85,17 @@
     "soonix-lib": {
       "locked": {
         "dir": "lib",
-        "lastModified": 1766044966,
-        "narHash": "sha256-VB8PgA5QYmehFCGGz8YmlmuhCG43ab9rK9ufdKmfjao=",
+        "lastModified": 1769607658,
+        "narHash": "sha256-gF9/QmmaNRgqkC5cqSGgwWvGXj9Mj4qMDkvvF/5BlSA=",
         "owner": "TECHNOFAB",
         "repo": "soonix",
-        "rev": "e9860d65a0123af948c1a2da65664a6d481efe05",
+        "rev": "19a88a0c2681bbc85bc2cbe4f2860316d50fe957",
         "type": "gitlab"
       },
       "original": {
         "dir": "lib",
         "owner": "TECHNOFAB",
+        "ref": "v0.2.0",
         "repo": "soonix",
         "type": "gitlab"
       }

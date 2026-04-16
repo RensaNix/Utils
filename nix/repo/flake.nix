@@ -1,9 +1,9 @@
 {
   inputs = {
-    nixmkdocs.url = "gitlab:TECHNOFAB/nixmkdocs?dir=lib";
-    devshell.url = "gitlab:rensa-nix/devshell?dir=lib";
-    devtools-lib.url = "gitlab:rensa-nix/devtools?dir=lib";
-    soonix-lib.url = "gitlab:TECHNOFAB/soonix?dir=lib";
+    nixmkdocs.url = "gitlab:TECHNOFAB/nixmkdocs/v1.1.0?dir=lib";
+    devshell.url = "gitlab:rensa-nix/devshell/v0.1.0?dir=lib";
+    devtools-lib.url = "gitlab:rensa-nix/devtools/v0.1.0?dir=lib";
+    soonix-lib.url = "gitlab:TECHNOFAB/soonix/v0.2.0?dir=lib";
     nix-gitlab-ci-lib.url = "gitlab:TECHNOFAB/nix-gitlab-ci/3.1.2?dir=lib";
     treefmt-nix = {
       url = "github:numtide/treefmt-nix";
